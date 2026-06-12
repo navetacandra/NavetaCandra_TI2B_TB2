@@ -74,6 +74,109 @@ body {
   margin-bottom: 25px;
 }
 
+/* Product Page Styles */
+.product-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+}
+
+.products-all h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+/* Contact Page Styles */
+.contact-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 10%;
+  background-color: #fff;
+  align-items: center;
+}
+
+.contact-content {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.submit-btn {
+  padding: 15px;
+  background-color: #25d366; /* WhatsApp Green */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #1ebe57;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
 .hero {
   display: flex;
   justify-content: space-between;

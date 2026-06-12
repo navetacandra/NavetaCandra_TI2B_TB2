@@ -8,7 +8,8 @@ import { RouterLink } from 'vue-router'
     <ul class="nav-links">
       <li><RouterLink to="/" active-class="active">Home</RouterLink></li>
       <li><RouterLink to="/about" active-class="active">About</RouterLink></li>
-      <li><a href="#">Produk</a></li>
+      <li><RouterLink to="/produk" active-class="active">Produk</RouterLink></li>
+      <li><RouterLink to="/contact" active-class="active">Kontak</RouterLink></li>
     </ul>
   </nav>
 </template>
