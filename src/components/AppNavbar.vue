@@ -1,13 +1,13 @@
 <script setup lang="ts">
-// Navbar component
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
   <nav class="navbar">
     <div class="logo">Aricand's Cake</div>
     <ul class="nav-links">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li><RouterLink to="/" active-class="active">Home</RouterLink></li>
+      <li><RouterLink to="/about" active-class="active">About</RouterLink></li>
       <li><a href="#">Produk</a></li>
     </ul>
   </nav>
