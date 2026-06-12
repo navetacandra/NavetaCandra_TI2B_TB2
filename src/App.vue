@@ -1,11 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
+import AppNavbar from './components/AppNavbar.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="app-container">
+    <AppNavbar />
+    <RouterView />
+  </div>
+  <footer class="footer">
+    <p>Copyright 2026 &copy; Aricand's Cake</p>
+  </footer>
 </template>
 
-<style scoped></style>
+<style>
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+</style>

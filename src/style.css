@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.home-page {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fff;
+  position: sticky;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+}
+
+.tagline {
+  max-width: 500px;
+}
+
+.tagline h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.tagline p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.hero-images {
+  position: relative;
+  width: 350px;
+  height: 400px;
+}
+
+.stacked-card {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+  transform: rotate(-8deg);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.card-2 {
+  transform: rotate(4deg);
+  top: 20px;
+  left: 60px;
+  z-index: 2;
+}
+.card-3 {
+  transform: rotate(12deg);
+  top: 40px;
+  left: 120px;
+  z-index: 3;
+}
+
+.testimonials {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 60px 5%;
+  background-color: #fff;
+}
+
+.testimoni-card {
+  min-width: 350px;
+  padding: 40px;
+  background-color: #f0f4f8;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comment {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.name {
+  font-weight: bold;
+  color: #555;
+}
+
+.products {
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+}
+
+.products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.product-card {
+  aspect-ratio: 3/4;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.product-name {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.show-more {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.show-more:hover {
+  background-color: #555;
+}
+
+.footer {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Hide scrollbar for testimonials */
+.testimonials::-webkit-scrollbar {
+  display: none;
+}
+.testimonials {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 100px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .tagline h1 {
+    font-size: 2.5rem;
+  }
+}
