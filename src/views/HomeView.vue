@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AppTestimonialCard from '../components/AppTestimonialCard.vue'
 import AppProductCard from '../components/AppProductCard.vue'
+import { RouterLink } from 'vue-router'
 
 const products = [
   { name: 'Onde-Onde', img: '6149853402612044416.jpg' },
@@ -62,7 +63,7 @@ const getImageUrl = (name: string) => {
         <div class="product-grid">
           <AppProductCard v-for="p in products" :key="p.img" :name="p.name" :image="p.img" />
         </div>
-        <a href="#" class="show-more">Lihat Semua Produk</a>
+        <RouterLink to="/produk" class="show-more">Lihat Semua Produk</RouterLink>
       </section>
     </main>
   </div>
